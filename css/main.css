@@ -444,8 +444,6 @@ img {
         background: #ffbc00; }
 
 @media (max-width: 800px) {
-  * {
-    overflow: hidden; }
   #header-home {
     height: 30rem; }
     #header-home .headrer-content {
@@ -458,4 +456,10 @@ img {
     #main-nav li {
       padding: 1rem; }
   #header-inner {
-    height: 10rem; } }
+    height: 10rem; }
+  #home-a .specials,
+  #home-b .cards,
+  #home-c .process,
+  #about-d .testimonials,
+  .items {
+    grid-template-columns: 1fr; } }

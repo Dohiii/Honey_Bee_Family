@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Honey Bee Family</title>
   </head>
@@ -35,7 +41,15 @@
           </ul>
         </nav>
         <div class="header-content">
-          <h1>
+          <h1
+            class="rellax"
+            data-rellax-speed="7"
+            data-rellax-xs-speed="-4"
+            data-rellax-mobile-speed="3"
+            data-rellax-tablet-speed="-8"
+            data-rellax-desktop-speed="-3"
+            data-rellax-zindex="1"
+          >
             Honey Bee
             <span
               style="color: #ffbc00"
@@ -44,10 +58,28 @@
               data-words='["Family_ ", "Aleksey_ ", "Olga_ "]'
             ></span>
           </h1>
-          <p class="lead">
-            I specialize in sweet tasty honey, it is good for you!
-          </p>
-          <a href="work.html" class="btn-main">View My Work, Honney</a>
+          <!-- <p
+            class="lead rellax"
+            data-rellax-speed="7"
+            data-rellax-xs-speed="-4"
+            data-rellax-mobile-speed="3"
+            data-rellax-tablet-speed="-8"
+            data-rellax-desktop-speed="-3"
+            data-rellax-zindex="1"
+          >
+            We specialize in sweet tasty honey, it is good for you!
+          </p> -->
+          <!-- <a
+            href="work.html"
+            class="btn-main rellax"
+            data-rellax-speed="9"
+            data-rellax-xs-speed="-4"
+            data-rellax-mobile-speed="3"
+            data-rellax-tablet-speed="-8"
+            data-rellax-desktop-speed="-3"
+            data-rellax-zindex="1"
+            >View My Work, Honney</a
+          > -->
         </div>
       </div>
     </header>
@@ -102,7 +134,131 @@
       </div>
     </section>
     <!-- Section B -->
+    <section id="home-b" class="text-center">
+      <div class="cards">
+        <div class="card card1">
+          <div class="cardContainer">
+            <img src="/dist/img/beeCards/bee (1).jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Bee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              tempore.
+            </p>
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="cardContainer">
+            <img src="/dist/img/beeCards/bee (5).jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Bee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              tempore.
+            </p>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="cardContainer">
+            <img src="/dist/img/beeCards/bee (8).jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Bee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              tempore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section C -->
+    <section id="home-c" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">Our Work Process</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          eligendi fugit odio, aspernatur asperiores vitae, fuga assumenda sequi
+          magnam consequuntur culpa. Odio doloribus delectus consequatur.
+        </p>
+        <div class="process">
+          <div>
+            <i class="fas fa-cloud-sun-rain fa-4x process-icon my-2">
+              <div class="process-step">1</div>
+            </i>
+
+            <h3>Discuss The Honey</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              reprehenderit cumque architecto ea rerum ducimus!
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-book-reader fa-4x process-icon my-2">
+              <div class="process-step">2</div>
+            </i>
+
+            <h3>Read About Honey</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              reprehenderit cumque architecto ea rerum ducimus!
+            </p>
+          </div>
+          <div>
+            <i class="fab fa-angellist fa-4x process-icon my-2">
+              <div class="process-step">3</div>
+            </i>
+
+            <h3>Client as Part of Family</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              reprehenderit cumque architecto ea rerum ducimus!
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-baby fa-4x process-icon my-2">
+              <div class="process-step">4</div>
+            </i>
+
+            <h3>Child friendly</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              reprehenderit cumque architecto ea rerum ducimus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy: 2021 By: Valerii Dorokhov</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- //Scripts -->
+    <script src="rellax.min.js"></script>
+    <script>
+      //default JS Setting
+      var rellax = new Rellax(".rellax", {
+        breakpoints: [576, 768, 1201, 1900],
+      });
+    </script>
+    <script>
+      //Enable Horizontal Parallax Scrolling
+      var rellax = new Rellax(".rellax", {
+        horizontal: true,
+      });
+    </script>
 
     <script src="app.js"></script>
   </body>
